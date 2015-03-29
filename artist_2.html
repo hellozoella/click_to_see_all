@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>version_2</title>
+<script src="js/jquery.js" type="text/javascript"></script>
+<style>
+body {
+	font-family: "Ubuntu", sans-serif;
+	padding:20px 0 0 0;
+	margin:0;
+	}
+ul, li {
+    list-style: none;
+	}
+.container {
+	width:1100px;
+	margin:0 auto; 
+	}
+.clear {
+	float: none;
+	clear:both;
+	}
+.left {
+	float: left;
+	}
+.right {
+	float: right;
+	}
+.artists ul {
+	padding:0;
+	margin:0;
+	}	
+.artists ul li img {
+	width: 100%;
+	}
+.top_artists h2.left{ /*  TITILE H2 */
+	color:#222;
+	text-transform: uppercase;
+letter-spacing: 1px;
+font-size: 1.15em;
+line-height: 1.75;
+margin: 0 0 5px 0;
+	}
+.top_artists h2.right { /*  TITILE H2 */
+    color:#222;
+	display:block;
+	padding: 5px 6px;
+font-size: 10px;
+font-weight:100;
+border: #222 1px dotted;
+	}
+.artists a {  /*  TITILE H2 */
+	text-decoration:none;
+	color: #222;
+	}
+.artists h4, h5 {   /*  TITILE H4, H5 */
+	color:#222;
+	margin: 0;
+line-height: 1.5;
+	}
+.artists h4 {
+	text-transform: uppercase;
+font-size: 14px;
+	}
+.artists h5 {
+font-size: 14px;
+font-weight:100;
+	}
+.artists {
+	padding-bottom: 50px;
+	}
+.artists ul li {
+	float:left;
+	width: 259px;
+	margin-right: 21px;
+	}	
+.artists ul li.end {
+	margin-right:0;
+	}	
+ .artists h4:hover, h5:hover, span:hover {
+	text-decoration: underline;
+	}
+.artists li { 
+	position: relative;
+	}
+.artists {
+	margin:0 auto;
+	padding-bottom: 50px;
+	width:1100px;
+	height:287px;
+	position: relative;
+	}
+.artists .container {
+	height: 237px;
+	width: 1100px;
+	overflow: hidden;
+	}
+.artists ul li {
+	float:left;
+	width: 254px;
+	margin-right: 21px;
+	}	
+.artists ul li i {
+	display: block;
+	height: 180px;
+	overflow:hidden;
+	}
+#left,#right {
+	position: absolute;
+	top: 120px;
+	left: 6px;
+	cursor:pointer;
+	height: 30px;
+	width: 18px;
+	background-image: url(img/left.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+	border-width: 0px;
+	background-color: #FFF;
+}
+#right {
+	left: 1055px;
+	background-image: url(img/right.gif);
+}
+#left.endarrow,#right.endarrow {
+	background-position: center bottom;
+}
+
+.artists ul li.end {
+	margin-right:0;
+	}	
+.artists li {      /* MASKBOX BEGINS */
+	position: relative;
+	}
+.artists .maskbox {
+opacity: 0;
+position: absolute;
+top: 80px;
+left: 121px;
+overflow: hidden;
+transition: all 0.4s ease-in-out;
+color: #000;
+font-size: 0.85em;
+	}
+.artists .maskbox {    /* THE FOUR */
+opacity: 0;
+position: absolute;
+top: 52px;
+left: 75px;
+overflow: hidden;
+transition: all 0.4s ease-in-out;
+color: #000;
+font-size: 0.85em;
+	}
+.artists .maskbox .quickview{
+	padding: 10px 20px;
+background: rgba(255, 255, 255, 0.82);
+box-shadow: rgba(0, 0, 0, 0.16) 0 2px 8px;
+color: #666;
+font-size:1.2em;
+	font-weight:100;
+	}
+.artists li:hover .maskbox {        /* end MASKBOX */
+   opacity: 1;
+	}
+
+
+</style>
+
+</head>
+
+<body>
+<div class="top_artists">
+<div class="container">
+   <h2 class="left">Artists</h2>
+   <h2 class="right" style="margin-right:21px;">SHOW ALL</h2>
+</div>
+</div>
+
+
+<div class="artists" id="artists">
+<div class="container" id="artcontainer">
+   <div class="clear"></div>
+   
+   <ul>
+   
+     <li><a href="#"><i><img src="img/artist1.jpg"></i>
+        <h5>ALEJANDRO OSPINA</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     <li><a href="#"><i><img src="img/artist2.jpg"></i>
+        <h5>RAFAEL VILLARES</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     <li><a href="#"><i><img src="img/artist3.jpg"></i>
+        <h5>CRISTINA RESTREPO</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     <li><a href="#"><i><img src="img/artist4.jpg"></i>
+        <h5>NACHEV</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     
+     
+     <li><a href="#"><i><img src="img/artist5.jpg"></i>
+        <h5>GOMEZ BARROS</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     <li><a href="#"><i><img src="img/artist6.jpg"></i>
+        <h5>IVAN RICKENMANN</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     <li><a href="#"><i><img src="img/artist7.jpg"></i>
+        <h5>MATILDA TEMPERLEY</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     <li><a href="#"><i><img src="img/artist8.jpg"></i>
+        <h5>OLIVER BARNETT</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     
+     
+     <li><a href="#"><i><img src="img/artist9.jpg"></i>
+        <h5>HENRY BRUCE</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     <li><a href="#"><i><img src="img/artist10.jpg"></i>
+        <h5>PHILIP VOLKERS</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     <li><a href="#"><i><img src="img/artist11.jpg"></i>
+        <h5>YUNIOR MARINO</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     <li><a href="#"><i><img src="img/artist12.jpg"></i>
+        <h5>MABEL POBLET</h5>
+        <div class="maskbox"><p class="quickview">Quick View</p></div>
+     </a></li>
+     
+</ul>
+    <input id="left" type="button">
+    <input type="button" class="endarrow" id="right">
+   
+   <script type="text/javascript">
+var n,c = 0
+$(function(){
+  n = $("#artcontainer li img").size() //numbers of imgs
+  $("#artcontainer ul").css("width",275 * n)
+  $("#left").click(function(){
+     $("#right").removeClass("endarrow")
+	 c++
+	 if(c>=n-4) {
+	 c = n-4
+	 $(this).addClass("endarrow")
+	 }
+     $("#artcontainer").animate({scrollLeft:275*c})
+  })
+  $("#right").click(function(){
+     $("#left").removeClass("endarrow")
+	 c--
+	 if(c<=0) {
+	 c = 0
+	 $(this).addClass("endarrow")
+	 }
+     $("#artcontainer").animate({scrollLeft:275*c})
+  })
+
+});
+</script>
+
+</div>
+<div class="clear"></div>
+</div>
+<!---------end artists----------->
+</body>
+</html>
